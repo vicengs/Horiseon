@@ -1,3 +1,18 @@
+# Horiseon
+
+## Purpose
+A website that offers digital marketing services
+
+## Built with
+* HTML
+* CSS
+
+## Website
+https://vicengs.github.io/Horiseon/
+
+## Contribution
+Made with ❤️ by Vicente Garcia Sepulveda
+
 # Description
 
 Code was refactored
