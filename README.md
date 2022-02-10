@@ -1,3 +1,23 @@
+# Description
+
+Code was refactored
+
+* Adding accesibility functions
+* Optimizing HTML and CSS classes and elements
+* Commenting code (HTML & CSS)
+* No changes in style
+* More Functionality
+
+# Instructions (Solved)
+## Links
+```
+SSH to clone: git@github.com:vicengs/Horiseon.git
+```
+GitHub repository: https://github.com/vicengs/Horiseon
+```
+Live URL: https://vicengs.github.io/Horiseon/
+```
+
 # 01 HTML, CSS, and Git: Code Refactor
 
 One of the most common tasks for front-end and junior developers is to take existing code and refactor it to either meet a certain set of standards or implement a new technology. Web accessibility is an increasingly important consideration for businesses, ensuring that people with disabilities and/or socio-economic restrictions have access to their website. Accessible websites are better optimized for search engines, and help companies avoid litigation.
