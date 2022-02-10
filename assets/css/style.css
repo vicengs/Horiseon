@@ -1,80 +1,103 @@
-* {
+/* ------------------------------ */
+/* Project  : Horiseon            */
+/* File     : style.css           */
+/* Author   : ------------------- */
+/* Date     : ------------------- */
+/* Modify   : Vicente Garcia (VG) */
+/* Modified : 02/09/2022          */
+/* ------------------------------ */
+*{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
-body {
+body{
     background-color: #d9dcd6;
 }
-
-.header {
+/* VG - Change class .header to element header - BEGIN */
+header{
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
-    color: #ffffff;
+    /* VG - Delete color:#ffffff isn't necessary */
 }
-
-.header h1 {
+header h1{
     display: inline-block;
     font-size: 48px;
 }
-
-.header h1 .seo {
+/** VG - Add header element to "a" element to be more specific and move to sequential position **/
+header a{
+    color: #ffffff;
+    text-decoration: none;
+}
+/** VG - Change class seo to element span in header **/
+header span{
     color: #d9dcd6;
 }
-
-.header div {
+/*** VG - Change elemend div to element nav - BEGIN ***/
+header nav{
     padding-top: 15px;
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-
-.header div ul {
+header nav ul{
     list-style-type: none;
 }
-
-.header div ul li {
+header nav ul li{
     display: inline-block;
     margin-left: 25px;
 }
-
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-p {
-    font-size: 16px;
-}
-
-.hero {
+/*** VG - Change elemend div to element nav - END ***/
+/* VG - Change class .header to element header - END */
+.hero{
     height: 800px;
-    width: 100%;
+    /* VG - Delete width=100% isn't necessary */
     margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
 }
-
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-
-.content {
+/* VG - Move to sequential position */
+.content{
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
-
+/* VG - Delete definition of classes .search-engine-optimization, online-reputation-management and social-media-marketing */
+/* VG - Add definition to class content in elements article (article change from div) */
+.content article{
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+/* VG - Delete definition of classes search-engine-optimization, online-reputation-management and social-media-marketing in elements img */
+/* VG - Add definition to class content in elements img */
+.content img{
+    max-height: 200px;
+}
+/* VG - Delete definition of classes search-engine-optimization, online-reputation-management and social-media-marketing in elements h2 */
+/* VG - Add definition to class content in elements h2 */
+.content h2{
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+/* VG - Add classes content and benefit to "p" element to be more specific and move to sequential position */
+.content p, .benefits p{
+    font-size: 16px;
+}
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -85,116 +108,33 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
-
-.benefit-lead {
+/* VG - Delete definition of classes benefit-lead, benefit-brand and benefit-cost */
+/* VG - Add definition to class benefits in elements div */
+.benefits div{
     margin-bottom: 32px;
     color: #ffffff;
 }
-
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+/* VG - Delete definition of classes benefit-lead, benefit-brand and benefit-cost in elements h3 */
+/* VG - Add definition to class benefits in elements h3 */
+.benefits h3{
     margin-bottom: 10px;
     text-align: center;
 }
-
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+/* VG - Delete definition of classes benefit-lead, benefit-brand and benefit-cost in elements img */
+/* VG - Add definition to class benefits in elements img */
+.benefits img{
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.footer {
+/* VG - Change class .footer to element footer - BEGIN */
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
-
-.footer h2 {
+footer h2 {
     font-size: 20px;
 }
+/* VG - Change class .footer to element footer - END */
