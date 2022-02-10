@@ -9,13 +9,17 @@ Code was refactored
 * More Functionality
 
 # Instructions (Solved)
-## Links
+## SSH to clone:
 ```
-SSH to clone: git@github.com:vicengs/Horiseon.git
+git@github.com:vicengs/Horiseon.git
 ```
-GitHub repository: https://github.com/vicengs/Horiseon
+## GitHub repository:
 ```
-Live URL: https://vicengs.github.io/Horiseon/
+https://github.com/vicengs/Horiseon
+```
+## Live URL:
+```
+https://vicengs.github.io/Horiseon/
 ```
 
 # 01 HTML, CSS, and Git: Code Refactor
